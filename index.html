@@ -12,9 +12,12 @@
     />
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body
+    onload="startCounters()"
     data-bs-spy="scroll"
     data-bs-target="#myNav"
     data-bs-offset="0"
@@ -850,28 +853,28 @@
           <div class="col-xl-3 col-md-12 py-sm-4">
             <div>
               <i class="fa-solid fa-users fs-3"></i>
-              <h3 class="fw-bolder pt-3">850</h3>
+              <h3 id="customers-counter" class="fw-bolder pt-3">0</h3>
               <p class="fw-bolder text-body-tertiary">Happy Customers</p>
             </div>
           </div>
           <div class="col-xl-3 col-md-12 py-sm-4">
             <div>
               <i class="fa-solid fa-thumbs-up fs-3"></i>
-              <h3 class="fw-bolder pt-3">230</h3>
+              <h3 id="projects-counter" class="fw-bolder pt-3">0</h3>
               <p class="fw-bolder text-body-tertiary">Complete Projects</p>
             </div>
           </div>
           <div class="col-xl-3 col-md-12 py-sm-4">
             <div>
               <i class="fa-solid fa-bullhorn fs-3"></i>
-              <h3 class="fw-bolder pt-3">9450</h3>
+              <h3 id="code-lines-counter" class="fw-bolder pt-3">0</h3>
               <p class="fw-bolder text-body-tertiary">Lines Of Code</p>
             </div>
           </div>
           <div class="col-xl-3 col-md-12 py-sm-4">
             <div>
               <i class="fa-solid fa-download fs-3"></i>
-              <h3 class="fw-bolder pt-3">780</h3>
+              <h3 id="files-counter" class="fw-bolder pt-3">0</h3>
               <p class="fw-bolder text-body-tertiary">Files Downloaded</p>
             </div>
           </div>
@@ -1119,6 +1122,8 @@
         .type(" Designer", { delay: 2000 })
         .go();
     </script>
+
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
